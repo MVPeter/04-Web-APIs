@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+
+<nav class="navbar navbar-expand navbar-light bg-dark">
+    <div class="nav navbar-nav">
+        <a class="nav-item nav-link active bg-warning hide" href="#">Reset <span class="sr-only">(current)</span></a>
+    </div>
+</nav>
+
+<body onkeydown="return (event.keyCode!=13)">
+    <h1 class="p-0 m-0">
+        <div class="container-fluid p-0 mr-0 ml-0 border border-dark h1-container">
+            <div class="row w-100 m-0">
+                <div class="col-md-8 align-items-start bg-info display-5 pl-5 pr-4 pt-2" style="height: 100px"
+                    id="qHeader">3
+                    Javasript Questions in 30 Seconds</div>
+                <div class="col-md-3 bg-danger text-center pt-2">Timer
+                    <p class="timerSeconds"> Seconds</p>
+                </div>
+                <div class="col-md-1 bg-warning">
+                    <div class="timerSeconds" id="timeLeft"></div>
+                </div>
+
+            </div>
+        </div>
+    </h1>
+    <div class="container-fluid m-0 p-0">
+        <aside class="container w-25 float-left bg-info border border-dark">
+            <div class="row">
+                <div class="col-xs-12 p-2 pl-4">
+                    <h2 class="font-weight-bold">Rules</h2>
+                    <ul class="">
+                        <li>Each second left is worth 1 point.</li>
+                        <li>Each incorrect answer is -10 seconds.</li>
+                    </ul>
+                    <br>
+                    <h2 class="font-weight-bold">High Scores:</h2>
+                    <ul class="">
+                        <li id="highScore1"></li>
+                    </ul>
+                    <br>
+                    <h5 class="font-weight-bold">Enter a name to start</h5>
+                    <form method="POST">
+                        <div class="input-group">
+                            <input type="text" name="playerName" id="player" placeholder="Player Name">
+
+                        </div>
+                        <button type="button" id="startB">Start</button>
+                    </form>
+                </div>
+            </div>
+        </aside>
+
+        <section class="container-fluid w-75 float-left" id="qContain">
+            <div class="row justify-content-md-center">
+                <div class="col-md-12-light align-self-start text-center">
+                    <div id="msg"></div>
+                </div>
+            </div>
+    </div>
+    <div class="row justify-content-md-center .no-gutters">
+        <div class="col-xl-12-light align-self-end text-center answersSection">
+            <div id="mainArticle">
+                <div id="startImg" class="">
+
+                    <img src="./assets/quiz.jpg" alt="image with words quiz.">
+                </div>
+                <div id="questionQ" class="questions hide">
+                    <p id="questionA"></p>
+                    <input type="radio" id="answer1" name="answer">
+                    <label class="answers" id="answer1Text">Answer11</label><br>
+                    <input type="radio" id="answer2" name="answer">
+                    <label class="answers" id="answer2Text">Answer12</label><br>
+                    <input type="radio" id="answer3" name="answer">
+                    <label class="answers" id="answer3Text">Answer13</label><br><br>
+                    <input type="submit" id="submitQ" value="Submit">
+                </div>
+                
+            </div>
+        </div>
+
+        </section>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+
+
+
+
+</body>
+
+</html>
