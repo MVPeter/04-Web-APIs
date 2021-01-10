@@ -16,14 +16,14 @@ The quiz will:
 - Start a timer for the quiz.
 - Deduct time from the timer for wrong answers
 - Move from one question to the next.
-- Compair current score against the high score.
+- Compare current score against the high score.
 - Collect a top user and score.
 - Display the top user and score.
-- Once the quiz is over it will check the currect top score and update as needed.
+- Once the quiz is over it will check the current top score and update as needed.
 
 
 Future additions:
-- Quesitons and answer pools.
+- Questions and answer pools.
 - Random questions and answers.
 - Prompt for how many questions.
 - Set the clock for +10 seconds per question.

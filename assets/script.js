@@ -75,7 +75,6 @@ function resetImage() {
 // Function to remote the Image and replace it with the Main article
 function mainArticle(questionsNum) {
     var qNum = "questions" + qCount.toString()
-    // var divQuestion = document.createElement("p");
     updateImg.setAttribute("class", "hide");
     questionQ.removeAttribute("class", "hide");
     updateQuestionText(qNum);
@@ -135,17 +134,14 @@ function correctAnswerCheck(qNum, text) {
 function checkSelection(qNum, text) {
     if (radio1.checked === true) {
         text = radioText1.textContent;
-        console.log(radio1.checked + "radio1");
         correctAnswerCheck(qNum, text);
     } else if
         (radio2.checked === true) {
         text = radioText2.textContent;
-        console.log(radio2.checked + "radio2");
         correctAnswerCheck(qNum, text);
     } else if
         (radio3.checked === true) {
         text = radioText3.textContent;
-        console.log(radio3.checked + "radio3");
         correctAnswerCheck(qNum, text);
     } else console.log("Nothing Checked")
 
